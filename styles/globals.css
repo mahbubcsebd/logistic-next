@@ -1,173 +1,202 @@
 @import 'bootstrap/dist/css/bootstrap.min.css';
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 ul,
 li {
-    list-style: none;
-    margin: 0;
-    padding: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Syne, sans-serif;
+  font-family: Syne, sans-serif;
 }
 
 /* Header Start */
 .nav-link {
-    color: var(--gray-900, #140a09);
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 30px;
-    text-transform: capitalize;
+  color: var(--gray-900, #140a09);
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  text-transform: capitalize;
 }
 
 .navbar.navbar-expand-lg {
-    padding: 20px 0;
+  padding: 20px 0;
 }
 
 .ms-auto.navbar-nav {
-    gap: 40px;
+  gap: 40px;
 }
 
 .nav-link.active {
-    color: #ff5042 !important;
+  color: #ff5042 !important;
 }
 
 .header-1 {
-    background: #fff7f5 !important;
+  background: #fff7f5 !important;
 }
 /* Header End */
 
 /* Button Start */
 .btn {
-    padding: 16px 30px;
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 28px;
-    border-radius: 0;
-    transition: 0.3 ease all;
-    -webkit-transition: 0.3 ease all;
-    -moz-transition: 0.3 ease all;
-    -ms-transition: 0.3 ease all;
-    -o-transition: 0.3 ease all;
-    -webkit-border-radius: 0;
-    -moz-border-radius: 0;
-    -ms-border-radius: 0;
-    -o-border-radius: 0;
+  padding: 16px 30px;
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 28px;
+  border-radius: 0;
+  transition: 0.3 ease all;
+  -webkit-transition: 0.3 ease all;
+  -moz-transition: 0.3 ease all;
+  -ms-transition: 0.3 ease all;
+  -o-transition: 0.3 ease all;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  -ms-border-radius: 0;
+  -o-border-radius: 0;
 }
 .btn-orange {
-    color: #fff;
-    background-color: #ff5042;
-    border: 1px solid #ff5042;
+  color: #fff;
+  background-color: #ff5042;
+  border: 1px solid #ff5042;
 }
 .btn-orange:hover {
-    color: #fff;
-    background-color: #ff5042;
-    border: 1px solid #ff5042;
+  color: #fff;
+  background-color: #ff5042;
+  border: 1px solid #ff5042;
 }
 .btn-yellow {
-    color: #1d2939;
-    background-color: #ccc;
-    border: 1px solid #ccc;
+  color: #1d2939;
+  background-color: #ccc;
+  border: 1px solid #ccc;
 }
 .btn-yellow:hover {
-    color: #1d2939;
-    background-color: #ccc;
-    border: 1px solid #ccc;
+  color: #1d2939;
+  background-color: #ccc;
+  border: 1px solid #ccc;
 }
 .btn-orange-outline {
-    color: #ff5042;
-    background-color: transparent;
-    border: 1px solid #ff5042;
+  color: #ff5042;
+  background-color: transparent;
+  border: 1px solid #ff5042;
 }
 .btn-orange-outline:hover {
-    color: #ff5042;
-    background-color: transparent;
-    border: 1px solid #ff5042;
+  color: #ff5042;
+  background-color: transparent;
+  border: 1px solid #ff5042;
 }
 .btn-light {
-    color: #ff5042;
-    background-color: #fff;
-    border: 1px solid #fff;
+  color: #ff5042;
+  background-color: #fff;
+  border: 1px solid #fff;
 }
 .btn-light:hover {
-    color: #ff5042;
-    background-color: #fff;
-    border: 1px solid #fff;
+  color: #ff5042;
+  background-color: #fff;
+  border: 1px solid #fff;
 }
 .btn-dark {
-    color: #fff;
-    background-color: #140a09;
-    border: 1px solid #140a09;
+  color: #fff;
+  background-color: #140a09;
+  border: 1px solid #140a09;
 }
 .btn-dark:hover {
-    color: #ff5042;
-    background-color: #140a09;
-    border: 1px solid #140a09;
+  color: #ff5042;
+  background-color: #140a09;
+  border: 1px solid #140a09;
 }
 .btn-text {
-    color: #ff5042;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 30px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
-    gap: 6px;
+  color: #ff5042;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  gap: 6px;
 }
 .btn-text:hover {
-    color: #ff5042;
+  color: #ff5042;
 }
 /* Button End */
 
 /* 404 Start */
 .notFound-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    gap: 20px;
-    padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding-top: 100px;
 }
 
 .notFoundTitle {
-    color: var(--gray-900, #140a09);
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 78px;
-    letter-spacing: 0.9px;
-    margin-top: -120px;
+  color: var(--gray-900, #140a09);
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0.9px;
+  margin-top: -120px;
 }
 
 .notFoundText {
-    color: var(--gray-700, #433b3a);
-    text-align: center;
-    font-family: Inter;
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
+  color: var(--gray-700, #433b3a);
+  text-align: center;
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 32px;
 }
 /* 404 End */
+
+/* Tabs */
+.nav-tabs {
+  border-bottom: 0;
+  margin-bottom: 24px;
+}
+
+.nav-tabs .nav-link {
+  margin-bottom: 0;
+  background: 0;
+  border: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  padding: 0 55px 16px 55px;
+  color: #000 !important;
+  font-size: 30px;
+  font-family: Syne;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 45px;
+  letter-spacing: 0.45px;
+  border-bottom: 4px solid #f3f3f3 !important;
+  margin-right: 20px;
+}
+
+.nav-tabs .nav-link.active {
+  border-bottom: 4px solid #000 !important;
+}
+/* Tabs */
