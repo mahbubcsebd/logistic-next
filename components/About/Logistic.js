@@ -1,11 +1,11 @@
-'use client'
+'use client';
 
-import Image from "next/image";
-import { Col, Container, Row, Tab, Tabs } from "react-bootstrap";
-import gcIcon from "../../public/icons/gc-icon.svg";
-import logImg from "../../public/images/log-img.png";
-import logistic from "../../public/images/logistics.png";
-import classes from "../../styles/logistic.module.scss";
+import Image from 'next/image';
+import { Col, Container, Row, Tab, Tabs } from 'react-bootstrap';
+import gcIcon from '../../public/icons/gc-icon.svg';
+import logImg from '../../public/images/log-img.png';
+import logistic from '../../public/images/logistics.png';
+import classes from '../../styles/logistic.module.scss';
 
 const Logistic = () => {
   return (
@@ -48,64 +48,82 @@ const Logistic = () => {
                 fill
               >
                 <Tab eventKey="goals" title="Our Goals">
-                                                          <div className={`${classes.GoalContent}`}>
-                                            <p className="text mb-4">Our company was founded with a mission to simplify
-                                                the
-                                                logistics process for our customers, and we achieve this through
-                                                our commitment to delivering exceptional service and innovative
-                                                solutions that meet the unique needs of each client.
-                                                <br/><br/>
-                                                Our team of experienced logistics professionals work closely with
-                                                our clients to understand their needs, develop
-                                                customized logistics solutions, and provide ongoing support
-                                                throughout the entire transportation process.
-                                            </p>
-                                            <ul className={`${classes.goalsCollection} column-2`}>
-                                                <li>
-                                                    <div>
-                                                        <Image src={gcIcon} alt="gc"
-                                                            className={`${classes.gcIcon}`}/>
-                                                    </div>
-                                                    <p>Transportation assistance</p>
-                                                </li>
-                                                <li>
-                                                    <div>
-                                                        <Image src={gcIcon} alt="gc"
-                                                            className={`${classes.gcIcon}`}/>
-                                                    </div>
-                                                    <p>Biggest sea cargo company</p>
-                                                </li>
-                                                <li>
-                                                    <div>
-                                                        <Image src={gcIcon} alt="gc"
-                                                            className={`${classes.gcIcon}`}/>
-                                                    </div>
-                                                    <p>Ship everywhere</p>
-                                                </li>
-                                                <li>
-                                                    <div>
-                                                        <Image src={gcIcon} alt="gc"
-                                                            className={`${classes.gcIcon}`}/>
-                                                    </div>
-                                                    <p>Unlimited packages sizes</p>
-                                                </li>
-                                            </ul>
-                                        </div>
+                  <div className={`${classes.GoalContent}`}>
+                    <p className="text mb-4">
+                      Our company was founded with a mission to simplify the
+                      logistics process for our customers, and we achieve this
+                      through our commitment to delivering exceptional service
+                      and innovative solutions that meet the unique needs of
+                      each client.
+                      <br />
+                      <br />
+                      Our team of experienced logistics professionals work
+                      closely with our clients to understand their needs,
+                      develop customized logistics solutions, and provide
+                      ongoing support throughout the entire transportation
+                      process.
+                    </p>
+                    <ul className={`${classes.goalsCollection} column-2`}>
+                      <li>
+                        <div>
+                          <Image
+                            src={gcIcon}
+                            alt="gc"
+                            className={`${classes.gcIcon}`}
+                          />
+                        </div>
+                        <p>Transportation assistance</p>
+                      </li>
+                      <li>
+                        <div>
+                          <Image
+                            src={gcIcon}
+                            alt="gc"
+                            className={`${classes.gcIcon}`}
+                          />
+                        </div>
+                        <p>Biggest sea cargo company</p>
+                      </li>
+                      <li>
+                        <div>
+                          <Image
+                            src={gcIcon}
+                            alt="gc"
+                            className={`${classes.gcIcon}`}
+                          />
+                        </div>
+                        <p>Ship everywhere</p>
+                      </li>
+                      <li>
+                        <div>
+                          <Image
+                            src={gcIcon}
+                            alt="gc"
+                            className={`${classes.gcIcon}`}
+                          />
+                        </div>
+                        <p>Unlimited packages sizes</p>
+                      </li>
+                    </ul>
+                  </div>
                 </Tab>
                 <Tab eventKey="story" title="Our Story">
                   <div className={`${classes.storyContent}`}>
-                                            <p className="text mb-4">Our company was founded with a mission to simplify
-                                                the
-                                                logistics process for our customers, and we achieve this through
-                                                our commitment to delivering exceptional service and innovative
-                                                solutions that meet the unique needs of each client.
-                                                <br/><br/>
-                                                Our team of experienced logistics professionals work closely with
-                                                our clients to understand their needs, develop
-                                                customized logistics solutions, and provide ongoing support
-                                                throughout the entire transportation process.
-                                            </p>
-                                        </div>
+                    <p className="text mb-4">
+                      Our company was founded with a mission to simplify the
+                      logistics process for our customers, and we achieve this
+                      through our commitment to delivering exceptional service
+                      and innovative solutions that meet the unique needs of
+                      each client.
+                      <br />
+                      <br />
+                      Our team of experienced logistics professionals work
+                      closely with our clients to understand their needs,
+                      develop customized logistics solutions, and provide
+                      ongoing support throughout the entire transportation
+                      process.
+                    </p>
+                  </div>
                 </Tab>
               </Tabs>
             </Col>
@@ -119,6 +137,6 @@ const Logistic = () => {
       </div>
     </div>
   );
-}
+};
 
-export default Logistic
+export default Logistic;

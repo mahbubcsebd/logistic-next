@@ -1,8 +1,12 @@
+import Banner from "@/components/Banner";
+
 const page = () => {
     return (
-        <div>
-            <h1>Contact Page</h1>
+      <div id="faq-page" className="faq-page">
+        <div className="faq-page-area">
+          <Banner text="Contact" title="Contact Us" />
         </div>
+      </div>
     );
 };
 

@@ -1,5 +1,8 @@
-import Logistic from "@/components/About/Logistic";
+import Choose from "@/components/about/Choose";
+import Logistic from "@/components/about/Logistic";
 import Banner from "@/components/Banner";
+import Client from "@/components/Client";
+import Team from "@/components/team/Team";
 
 const page = () => {
   return (
@@ -7,6 +10,9 @@ const page = () => {
       <div className="logistic-page-area">
         <Banner text="About Us" title="Who we are" />
         <Logistic />
+        <Choose />
+        <Team />
+        <Client/>
       </div>
     </div>
   );

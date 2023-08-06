@@ -1,14 +1,18 @@
-import Head from "next/head";
+import Banner from "@/components/Banner";
+import Freight from "@/components/partners/Freight";
+import Marketplace from "@/components/partners/Marketplace";
+import Shipping from "@/components/partners/Shipping";
 
 const page = () => {
     return (
-        <div>
-            <Head>
-                <title>My page title</title>
-                <meta property="og:title" content="My page title" key="title" />
-            </Head>
-            <h1>Partner Page</h1>
+      <div id="partner-page" className="partner-page">
+        <div className="partner-page-area">
+          <Banner text="Our Partners" title="Our Partners" />
+          <Shipping/>
+          <Freight/>
+          <Marketplace/>
         </div>
+      </div>
     );
 };
 
