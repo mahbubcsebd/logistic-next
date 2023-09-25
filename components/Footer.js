@@ -1,36 +1,27 @@
-'use client'
+'use client';
 
-import Image from "next/image";
-import Link from "next/link";
-import { Col, Container, Row } from "react-bootstrap";
+import Image from 'next/image';
+import Link from 'next/link';
+import { Col, Container, Row } from 'react-bootstrap';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTwitter } from 'react-icons/fa';
-import location from "../public/icons/location.svg";
-import logoLight from "../public/icons/logo-light.svg";
-import classes from "../styles/footer.module.scss";
+import location from '../public/icons/location.svg';
+import logoLight from '../public/icons/logo-light.svg';
+import classes from '../styles/footer.module.scss';
 
-const Footer = () => {
+function Footer() {
     return (
-        <footer
-            id="footer"
-            className="footer"
-        >
+        <footer id="footer" className="footer">
             <div className={`${classes.footerArea}`}>
                 <Container>
                     <Row className={`${classes.footerMiddle}`}>
-                        <Col lg={6}>
+                        <Col lg={6} className="mb-5">
                             <div className={`${classes.footerContent}`}>
                                 <div className={`${classes.footerLogo}`}>
-                                    <Image
-                                        src={logoLight}
-                                        alt="logo"
-                                    />
+                                    <Image src={logoLight} alt="logo" />
                                 </div>
                                 <div className={`${classes.footerAddress}`}>
                                     <div className={`${classes.locationIcon}`}>
-                                        <Image
-                                            src={location}
-                                            alt="location"
-                                        />
+                                        <Image src={location} alt="location" />
                                     </div>
                                     <h3>Ultimate Data Protection</h3>
                                 </div>
@@ -42,15 +33,9 @@ const Footer = () => {
                                 </div>
                             </div>
                         </Col>
-                        <Col
-                            lg={6}
-                            xxl={3}
-                            className="mb-8"
-                        >
+                        <Col lg={6} xxl={3} className="mb-5">
                             <div className={`${classes.footerMenu}`}>
-                                <h2 className={`${classes.menuCategory}`}>
-                                    Quick Links
-                                </h2>
+                                <h2 className={`${classes.menuCategory}`}>Quick Links</h2>
                                 <ul className={`${classes.footerMenuList}`}>
                                     <li>
                                         <a href="about.html">About Us</a>
@@ -59,9 +44,7 @@ const Footer = () => {
                                         <Link href="/services">Services</Link>
                                     </li>
                                     <li>
-                                        <Link href="#">
-                                            Track Your Shipment
-                                        </Link>
+                                        <Link href="#">Track Your Shipment</Link>
                                     </li>
                                     <li>
                                         <Link href="#">Get a Quote</Link>
@@ -69,15 +52,9 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </Col>
-                        <Col
-                            lg={6}
-                            xxl={3}
-                            className="mb-classes.8"
-                        >
+                        <Col lg={6} xxl={3} className="mb-5">
                             <div className={`${classes.footerMenu}`}>
-                                <h2 className={`${classes.menuCategory}`}>
-                                    Support
-                                </h2>
+                                <h2 className={`${classes.menuCategory}`}>Support</h2>
                                 <ul className={`${classes.footerMenuList}`}>
                                     <li>
                                         <Link href="#">Contact Us</Link>
@@ -96,7 +73,7 @@ const Footer = () => {
                         </Col>
                     </Row>
                 </Container>
-                <div className={`${classes.footerDevider}`}></div>
+                <div className={`${classes.footerDevider}`} />
                 <Container>
                     <div className={`${classes.footerBottom}`}>
                         <p className={`${classes.footerCopyright}`}>
@@ -105,22 +82,22 @@ const Footer = () => {
                         <ul className={`${classes.footerSocial}`}>
                             <li>
                                 <Link href="https://www.facebook.com/">
-                                    <FaFacebookF/>
+                                    <FaFacebookF />
                                 </Link>
                             </li>
                             <li>
                                 <Link href="https://www.instagram.com/">
-                                    <FaInstagram/>
+                                    <FaInstagram />
                                 </Link>
                             </li>
                             <li>
                                 <Link href="https://twitter.com/">
-                                    <FaTwitter/>
+                                    <FaTwitter />
                                 </Link>
                             </li>
                             <li>
                                 <Link href="https://www.linkedin.com/?original_referer=">
-                                    <FaLinkedinIn/>
+                                    <FaLinkedinIn />
                                 </Link>
                             </li>
                         </ul>
@@ -129,6 +106,6 @@ const Footer = () => {
             </div>
         </footer>
     );
-};
+}
 
 export default Footer;

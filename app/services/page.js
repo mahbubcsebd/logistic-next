@@ -1,21 +1,19 @@
-import Banner from "@/components/Banner";
-import Services from "@/components/services/Services";
+import Banner from '@/components/Banner';
+import Services from '@/components/services/Services';
 
-const Page = () => {
+export const metadata = {
+    title: 'Logistic | Services',
+};
+
+function Page() {
     return (
-        <div
-            id="services-page"
-            className="services-page"
-        >
+        <div id="services-page" className="services-page">
             <div className="services-page-area">
-                <Banner
-                    text="Our Services"
-                    title="Logistics Services"
-                />
+                <Banner text="Our Services" title="Logistics Services" />
                 <Services />
             </div>
         </div>
     );
-};
+}
 
 export default Page;

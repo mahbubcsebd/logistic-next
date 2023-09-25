@@ -1,13 +1,17 @@
-import Banner from "@/components/Banner";
+import Banner from '@/components/Banner';
+import ContactFull from '@/components/contact/ContactFull';
 
-const page = () => {
-    return (
-      <div id="faq-page" className="faq-page">
-        <div className="faq-page-area">
-          <Banner text="Contact" title="Contact Us" />
-        </div>
-      </div>
-    );
+export const metadata = {
+    title: 'Logistic | Contact',
 };
+
+const page = () => (
+    <div id="faq-page" className="faq-page">
+        <div className="faq-page-area">
+            <Banner text="Contact" title="Contact Us" />
+            <ContactFull />
+        </div>
+    </div>
+);
 
 export default page;

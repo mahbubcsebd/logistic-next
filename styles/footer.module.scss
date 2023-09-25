@@ -56,7 +56,7 @@
 .footerPhone {
     color: var(--primary-900, #ff5042);
     font-size: 36px;
-    font-family: Syne;
+
     font-style: normal;
     font-weight: 600;
     line-height: 36px;
@@ -228,3 +228,26 @@
 .footerBottomLink p {
     color: #fff;
 }
+
+/* Responsive CSS Start */
+@media screen and (max-width: 1600px) {
+}
+@media screen and (max-width: 1400px) {
+}
+@media screen and (max-width: 1366px) {
+}
+@media screen and (max-width: 1200px) {
+}
+@media screen and (max-width: 1024px) {
+}
+@media screen and (max-width: 992px) {
+}
+@media screen and (max-width: 768px) {
+}
+@media screen and (max-width: 575px) {
+}
+@media screen and (max-width: 480px) {
+}
+@media screen and (max-width: 360px) {
+}
+/* Responsive CSS End */

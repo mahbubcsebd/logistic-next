@@ -1,15 +1,15 @@
-import serviceIcon1 from "../public/icons/services-1.svg";
-import serviceIcon2 from "../public/icons/services-2.svg";
-import serviceIcon3 from "../public/icons/services-3.svg";
-import serviceIcon4 from "../public/icons/services-4.svg";
-import serviceIcon5 from "../public/icons/services-5.svg";
-import serviceIcon6 from "../public/icons/services-6.svg";
-import service1 from "../public/images/service-1.jpg";
-import service2 from "../public/images/service-2.jpg";
-import service3 from "../public/images/service-3.jpg";
-import service4 from "../public/images/service-4.jpg";
-import service5 from "../public/images/service-5.jpg";
-import service6 from "../public/images/service-6.jpg";
+import serviceIcon1 from '../public/icons/services-1.svg';
+import serviceIcon2 from '../public/icons/services-2.svg';
+import serviceIcon3 from '../public/icons/services-3.svg';
+import serviceIcon4 from '../public/icons/services-4.svg';
+import serviceIcon5 from '../public/icons/services-5.svg';
+import serviceIcon6 from '../public/icons/services-6.svg';
+import service1 from '../public/images/service-1.jpg';
+import service2 from '../public/images/service-2.jpg';
+import service3 from '../public/images/service-3.jpg';
+import service4 from '../public/images/service-4.jpg';
+import service5 from '../public/images/service-5.jpg';
+import service6 from '../public/images/service-6.jpg';
 
 const services = [
     {
