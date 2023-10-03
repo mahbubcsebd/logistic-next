@@ -16,7 +16,7 @@ function ServiceProcess() {
             <div className={`${classes.serviceProcessArea}`}>
                 <Container>
                     <Row className="align-items-center">
-                        <Col lg={6} className="order-xl-2">
+                        <Col xl={6} className="order-xl-2">
                             <div className={`${classes.serviceProcessImg} pb-4 pb-xl-0`}>
                                 <Image className="w-100" src={serviceProcess} alt="process" />
                             </div>

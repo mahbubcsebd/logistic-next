@@ -12,7 +12,7 @@ function Faq() {
                                 {faqs.map((faq) => {
                                     const { id, title, text } = faq;
                                     return (
-                                        <Accordion.Item eventKey={id} key={faq.id}>
+                                        <Accordion.Item eventKey={id} key={id}>
                                             <Accordion.Header className="accordion-header">
                                                 {title}
                                             </Accordion.Header>

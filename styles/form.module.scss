@@ -1,6 +1,5 @@
 .formTitle {
     color: var(--gray-white, #fff);
-
     font-size: 36px;
     font-style: normal;
     font-weight: 600;
@@ -68,6 +67,13 @@
 @media screen and (max-width: 1366px) {
 }
 @media screen and (max-width: 1200px) {
+    .formTitle {
+        font-size: 32px;
+    }
+
+    .formTitleBox {
+        padding: 16px 24px;
+    }
 }
 @media screen and (max-width: 1024px) {
 }
@@ -76,6 +82,14 @@
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 575px) {
+    .formTitleIcon {
+        display: none !important;
+    }
+
+    .formTitle {
+        font-size: 30px;
+        line-height: 45px;
+    }
 }
 @media screen and (max-width: 480px) {
 }

@@ -15,15 +15,17 @@ function Services() {
         <div id="services" className="services section-pb">
             <div className="services-area">
                 <Container>
-                    <TitleTwo
-                        title="Safe & Reliable Cargo Services"
-                        text="Safe & Reliable Cargo Solutions is an essential aspect of any logistics operation. Whether you are shipping valuable goods."
-                    />
+                    <Row>
+                        <TitleTwo
+                            title="Safe & Reliable Cargo Services"
+                            text="Safe & Reliable Cargo Solutions is an essential aspect of any logistics operation. Whether you are shipping valuable goods."
+                        />
+                    </Row>
                     <Row>
                         {services.map((service) => {
-                            const { title, desc, img, tag } = service;
+                            const { id, title, desc, img, tag } = service;
                             return (
-                                <Col md={6} lg={4} className="mb-4">
+                                <Col md={6} lg={4} className="mb-4" key={id}>
                                     <div className={`${classes.singleOurService}`}>
                                         <Link href="/" className={`${classes.serviceImgBox}`}>
                                             <Image

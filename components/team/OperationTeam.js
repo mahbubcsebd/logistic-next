@@ -24,7 +24,7 @@ function OperationTeam() {
                             );
                         })}
                     </Row>
-                    <div className="mx-auto text-center mt-5">
+                    <div className="mx-auto text-center mt-2 mt-lg-5">
                         <div className="btn btn-orange">Contact</div>
                     </div>
                 </Container>

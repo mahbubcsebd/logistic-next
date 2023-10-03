@@ -56,10 +56,9 @@
 .footerPhone {
     color: var(--primary-900, #ff5042);
     font-size: 36px;
-
     font-style: normal;
     font-weight: 600;
-    line-height: 36px;
+    line-height: 50px;
     letter-spacing: 0.54px;
 }
 
@@ -237,14 +236,28 @@
 @media screen and (max-width: 1366px) {
 }
 @media screen and (max-width: 1200px) {
+    .footerPhone {
+        font-size: 32px !important;
+    }
 }
 @media screen and (max-width: 1024px) {
 }
 @media screen and (max-width: 992px) {
+    .footerPhone {
+        font-size: 30px !important;
+    }
 }
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 575px) {
+    .footerPhone {
+        font-size: 24px !important;
+    }
+
+    .footerBottom {
+        flex-direction: column;
+        gap: 12px;
+    }
 }
 @media screen and (max-width: 480px) {
 }

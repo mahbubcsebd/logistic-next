@@ -6,6 +6,8 @@ import gcIcon from '../../public/icons/gc-icon.svg';
 import leading from '../../public/images/leading.jpg';
 import Title from '../title/Title';
 
+import classes from '@/styles/logistic.module.scss';
+
 function Leading() {
     return (
         <div id="leading" className="leading section-pb">
@@ -24,7 +26,7 @@ function Leading() {
                                     reduce costs and meet your business needs. Our supply chain
                                     solutions team provides detailed specifications.
                                 </p>
-                                <ul className="goals-collection column-2 mt-4">
+                                <ul className={`${classes.goalsCollection} column-2 mt-4`}>
                                     <li>
                                         <div>
                                             <Image src={gcIcon} alt="gc" className="gc-icon" />

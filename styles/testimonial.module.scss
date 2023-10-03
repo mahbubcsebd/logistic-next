@@ -75,10 +75,9 @@
 }
 
 .singleTestimonial2 {
-    margin-bottom: 50px;
-    .testimonial-text-2 {
+    // margin-bottom: 50px;
+    .testimonialText2 {
         color: var(--gray-700, #433b3a);
-
         font-size: 24px;
         font-style: normal;
         font-weight: 600;
@@ -87,40 +86,24 @@
         margin-bottom: 70px;
     }
 
-    .testimonialAuthor2 {
-        .authorName {
-            color: var(--gray-900, #140a09);
-
-            font-size: 30px;
-            font-style: normal;
-            font-weight: 600;
-            line-height: 30px;
-            letter-spacing: 0.45px;
-            margin-bottom: 12px;
-        }
-
-        .authorDesignation {
-            color: var(--gray-700, #433b3a);
-            font-family: Inter;
-            font-size: 14px;
-            font-style: normal;
-            font-weight: 400;
-            line-height: 14px;
-        }
+    .authorName {
+        color: var(--gray-900, #140a09);
+        font-size: 30px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 30px;
+        letter-spacing: 0.45px;
+        margin-bottom: 12px;
     }
-}
 
-.testimonial .slider-btn-box {
-    margin-left: 10px !important;
-}
-
-.testimonial-area.bg-lightOrange {
-    padding: 100px 0;
-}
-
-.testimonial-slider-1 .single-testimonial {
-    -webkit-box-shadow: none;
-    box-shadow: none;
+    .authorDesignation {
+        color: var(--gray-700, #433b3a);
+        font-family: Inter;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 14px;
+    }
 }
 
 /* Responsive CSS Start */
@@ -135,10 +118,26 @@
 @media screen and (max-width: 1024px) {
 }
 @media screen and (max-width: 992px) {
+    .testimonialText2 {
+        font-size: 22px !important;
+        margin-bottom: 50px !important;
+    }
+
+    .authorName {
+        font-size: 24px !important;
+    }
 }
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 575px) {
+    .testimonialText2 {
+        font-size: 20px !important;
+        margin-bottom: 40px !important;
+    }
+
+    .authorName {
+        font-size: 22px !important;
+    }
 }
 @media screen and (max-width: 480px) {
 }

@@ -70,10 +70,28 @@
 @media screen and (max-width: 1024px) {
 }
 @media screen and (max-width: 992px) {
+    .pageBannerArea {
+        height: 500px;
+    }
 }
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 575px) {
+    .bannerContent {
+        p {
+            margin-bottom: 12px !important;
+        }
+
+        h2 {
+            font-size: 28px !important;
+            line-height: 45px !important;
+            padding-bottom: 10px !important;
+        }
+    }
+
+    .pageBannerArea {
+        height: 400px;
+    }
 }
 @media screen and (max-width: 480px) {
 }

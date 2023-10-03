@@ -52,7 +52,7 @@ function Footer() {
                                 </ul>
                             </div>
                         </Col>
-                        <Col lg={6} xxl={3} className="mb-5">
+                        <Col lg={6} xxl={3}>
                             <div className={`${classes.footerMenu}`}>
                                 <h2 className={`${classes.menuCategory}`}>Support</h2>
                                 <ul className={`${classes.footerMenuList}`}>

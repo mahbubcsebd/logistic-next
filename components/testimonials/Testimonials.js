@@ -6,7 +6,7 @@ import SingleTestimonial from './SingleTestimonial';
 
 function Testimonials() {
     return (
-        <div id="tetimonial" className="tetimonial section">
+        <div id="tetimonial" className="tetimonial section-pb">
             <div className="testimonial-area">
                 <Container>
                     <Row>

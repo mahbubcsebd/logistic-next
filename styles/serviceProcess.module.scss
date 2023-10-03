@@ -26,7 +26,6 @@
 
 .processContent h3 {
     color: var(--gray-900, #140a09);
-
     font-size: 30px;
     font-style: normal;
     font-weight: 600;
@@ -101,8 +100,37 @@
 @media screen and (max-width: 1400px) {
 }
 @media screen and (max-width: 1366px) {
+    .processContent h3 {
+        font-size: 26px;
+    }
+
+    .processContent p {
+        font-style: 16px;
+    }
+
+    .processIcon {
+        width: 80px;
+        height: 80px;
+    }
+
+    .processDevider {
+        margin-left: 40px;
+    }
 }
 @media screen and (max-width: 1200px) {
+    .processIcon {
+        width: 70px;
+        height: 70px;
+
+        img {
+            width: 35px;
+            height: 35px;
+        }
+    }
+
+    .processDevider {
+        margin-left: 35px;
+    }
 }
 @media screen and (max-width: 1024px) {
 }
@@ -111,6 +139,9 @@
 @media screen and (max-width: 768px) {
 }
 @media screen and (max-width: 575px) {
+    .processContent h3 {
+        font-size: 26px;
+    }
 }
 @media screen and (max-width: 480px) {
 }

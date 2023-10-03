@@ -117,6 +117,11 @@
 @media screen and (max-width: 1024px) {
 }
 @media screen and (max-width: 992px) {
+    .subscribeContent {
+        h2 {
+            font-size: 34px !important;
+        }
+    }
 }
 @media screen and (max-width: 768px) {
     .subscribeFormBox {
@@ -126,10 +131,23 @@
     .subscribeContent {
         padding: 0 !important;
     }
+
+    .subscribeContent {
+        h2 {
+            font-size: 32px !important;
+        }
+    }
 }
 @media screen and (max-width: 575px) {
     .subscribeFormBox {
         width: 100% !important;
+    }
+
+    .subscribeContent {
+        h2 {
+            font-size: 30px !important;
+            line-height: 40px !important;
+        }
     }
 }
 @media screen and (max-width: 480px) {
