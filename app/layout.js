@@ -6,6 +6,7 @@ import HeaderTwo from '@/components/HeaderTwo';
 import Subscribe from '@/components/Subscribe';
 import { usePathname } from 'next/navigation';
 import '../styles/globals.css';
+import { inter } from './fonts';
 
 export const metadata = {
     title: 'Logistic',
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
     const pathname = usePathname();
     return (
         <html lang="en">
-            <body>
+            <body className={`${inter.className}`}>
                 {pathname === '/home' ? <HeaderTwo /> : <Header />}
                 {children}
                 <Subscribe />

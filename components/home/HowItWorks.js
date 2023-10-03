@@ -5,9 +5,31 @@ import workImg from '@/public/images/how-to-work.png';
 import classes from '@/styles/howItWorks.module.scss';
 import Image from 'next/image';
 import { Col, Container, Row } from 'react-bootstrap';
-import CountUp from 'react-countUp';
+// import CountUp from 'react-countUp';
 
 function HowItWorks() {
+    const countData = [
+        {
+            id: 1,
+            number: 365,
+            title: 'Delivered Packages.',
+        },
+        {
+            id: 2,
+            number: 95,
+            title: 'Countries Covered.',
+        },
+        {
+            id: 3,
+            number: 535,
+            title: 'Satisfied Clients.',
+        },
+        {
+            id: 4,
+            number: 757,
+            title: 'Tons of Goods.',
+        },
+    ];
     return (
         <div id="how-it-works" className="how-it-works section-pb">
             <div className={`${classes.howItWorksArea}`}>
@@ -26,30 +48,22 @@ function HowItWorks() {
                                     shipping needs efficiently.
                                 </p>
                                 <div className={`${classes.counterBoxWrapper}`}>
-                                    <div className={`${classes.singleCounterBox}`}>
-                                        <h2>
-                                            <CountUp end={365} duration={3} />
-                                        </h2>
-                                        <p>Delivered Packages.</p>
-                                    </div>
-                                    <div className={`${classes.singleCounterBox}`}>
-                                        <h2>
-                                            <CountUp end={95} duration={3} />
-                                        </h2>
-                                        <p>Countries Covered.</p>
-                                    </div>
-                                    <div className={`${classes.singleCounterBox}`}>
-                                        <h2>
-                                            <CountUp end={535} duration={3} />
-                                        </h2>
-                                        <p>Satisfied Clients.</p>
-                                    </div>
-                                    <div className={`${classes.singleCounterBox}`}>
-                                        <h2>
-                                            <CountUp end={757} duration={3} />
-                                        </h2>
-                                        <p>Tons of Goods.</p>
-                                    </div>
+                                    {countData.map((count) => {
+                                        const { id, title } = count;
+                                        return (
+                                            <div
+                                                className={`${classes.singleCounterBox} ${syne.className}`}
+                                                key={id}
+                                            >
+                                                <div className={`${classes.counterNumber}`}>
+                                                    {/* <CountUp end={number} duration={2} />+ */}
+                                                </div>
+                                                <p className={`${classes.counterCategory}`}>
+                                                    {title}
+                                                </p>
+                                            </div>
+                                        );
+                                    })}
                                 </div>
                             </div>
                         </Col>
