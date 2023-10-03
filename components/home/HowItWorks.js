@@ -1,35 +1,14 @@
 'use client';
 
 import { syne } from '@/app/fonts';
+import happyClients from '@/data/happyClients';
 import workImg from '@/public/images/how-to-work.png';
 import classes from '@/styles/howItWorks.module.scss';
 import Image from 'next/image';
 import { Col, Container, Row } from 'react-bootstrap';
-// import CountUp from 'react-countUp';
+import CountUp from 'react-countup';
 
 function HowItWorks() {
-    const countData = [
-        {
-            id: 1,
-            number: 365,
-            title: 'Delivered Packages.',
-        },
-        {
-            id: 2,
-            number: 95,
-            title: 'Countries Covered.',
-        },
-        {
-            id: 3,
-            number: 535,
-            title: 'Satisfied Clients.',
-        },
-        {
-            id: 4,
-            number: 757,
-            title: 'Tons of Goods.',
-        },
-    ];
     return (
         <div id="how-it-works" className="how-it-works section-pb">
             <div className={`${classes.howItWorksArea}`}>
@@ -48,15 +27,17 @@ function HowItWorks() {
                                     shipping needs efficiently.
                                 </p>
                                 <div className={`${classes.counterBoxWrapper}`}>
-                                    {countData.map((count) => {
-                                        const { id, title } = count;
+                                    {happyClients.map((happyClient) => {
+                                        const { id, number, title } = happyClient;
                                         return (
                                             <div
                                                 className={`${classes.singleCounterBox} ${syne.className}`}
                                                 key={id}
                                             >
                                                 <div className={`${classes.counterNumber}`}>
-                                                    {/* <CountUp end={number} duration={2} />+ */}
+                                                    <h2 className={syne.className}>
+                                                        <CountUp end={number} duration={2} />+
+                                                    </h2>
                                                 </div>
                                                 <p className={`${classes.counterCategory}`}>
                                                     {title}
